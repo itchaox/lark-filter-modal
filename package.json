@@ -1,0 +1,57 @@
+{
+  "name": "lark-filter-modal",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "飞书多维表格筛选弹窗组件",
+  "main": "dist/my-component.umd.js",
+  "module": "dist/my-component.es.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./react": "./dist/react/my-component.umd.js",
+    "./react/module": "./dist/react/my-component.es.js",
+    "./vue": "./dist/vue/my-component.umd.js",
+    "./vue/module": "./dist/vue/my-component.es.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:itchaox/lark-filter-modal.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build:react": "BUILD_TARGET=react vite build",
+    "build:vue": "BUILD_TARGET=vue vite build",
+    "build": "npm run build:react && npm run build:vue",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "lark-base-open",
+    "@lark-base-open",
+    "filter-react"
+  ],
+  "author": "WangChao",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^4.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.7.4",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vue": "^3.4.27",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@douyinfe/semi-foundation": "^2.58.0",
+    "@douyinfe/semi-icons": "^2.58.0",
+    "@douyinfe/semi-ui": "^2.58.0",
+    "@lark-base-open/js-sdk": "https://lf3-static.bytednsdoc.com/obj/eden-cn/jjjpceh7nulojvhj/@lark-base-open-js-sdk-0.4.0-alpha.12.tgz",
+    "@semi-bot/semi-theme-feishu-dashboard": "^1.0.3",
+    "normalize.css": "^8.0.1",
+    "styled-components": "^6.0.5",
+    "vite-plugin-semi-theming": "^0.1.0"
+  }
+}
