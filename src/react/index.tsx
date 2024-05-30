@@ -7,7 +7,7 @@ import { bitable } from '@lark-base-open/js-sdk';
 
 import { AppWrapper } from './style';
 
-import IconComponent from './FiledIcon';
+import IconComponent from '../components/FiledIcon';
 
 type modalPropsType = {
   // 点击保存按钮的回调函数
