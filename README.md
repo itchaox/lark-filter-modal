@@ -7,7 +7,9 @@
 - 安装  
   `npm install lark-filter-modal`
 
-## React 版本
+## 使用参考
+
+### React 版本
 
 - 在配置组件中使用
 
@@ -42,4 +44,6 @@ export const ConfigPanel: FC<{ myTableId: string }> = ({ myTableId }) => {
 
 ```
 
-## Vue 版本（待支持）
+### Vue 版本（待支持）
+
+## API
