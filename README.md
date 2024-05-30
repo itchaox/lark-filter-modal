@@ -47,3 +47,6 @@ export const ConfigPanel: FC<{ myTableId: string }> = ({ myTableId }) => {
 ### Vue 版本（待支持）
 
 ## API
+
+- useFilterModal
+- openFilterModal
