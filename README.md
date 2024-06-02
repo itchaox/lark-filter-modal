@@ -1,6 +1,9 @@
 # lark-filter-modal
 
-飞书多维表格-视图筛选公共组件
+- 作用：提供一个飞书多维表格的筛选弹窗公共组件，可以快速实现筛选功能，支持 React 和 Vue 版本
+- 效果示意图：
+
+  ![示意图](/src/assets/demo.gif)
 
 ## 基本用法
 
@@ -48,5 +51,37 @@ export const ConfigPanel: FC<{ myTableId: string }> = ({ myTableId }) => {
 
 ## API
 
-- useFilterModal
-- openFilterModal
+### useFilterModal
+
+一个 hook，在调用时，传入 savaCallback 和 cancelCallback 两个回调函数，分别在保存和取消时执行。
+
+```javascript
+interface IModalPropsType {
+  // 点击保存按钮的回调函数
+  saveCallback: (filterInfo: IFilterInfo) => void;
+
+  // 点击取消按钮的回调函数
+  cancelCallback?: () => void;
+}
+
+useFilterModal: (modalProps: modalPropsType) => {
+  openFilterModal;
+};
+```
+
+### openFilterModal
+
+打开弹窗事件
+
+```javascript
+interface IExternalParams {
+  // 表格 id
+  tableId: string;
+
+  // 过滤条件数据
+  filterInfo: IFilterInfo;
+}
+
+
+openFilterModal: (params: IExternalParams) => void;
+```

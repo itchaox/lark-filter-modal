@@ -9,15 +9,15 @@ import { AppWrapper } from './style';
 
 import IconComponent from '../components/FiledIcon';
 
-type modalPropsType = {
+interface IModalPropsType {
   // 点击保存按钮的回调函数
-  saveCallback: (values?: any) => void;
+  saveCallback: (filterInfo: IFilterInfo) => void;
 
   // 点击取消按钮的回调函数
   cancelCallback?: () => void;
-};
+}
 
-export const useFilterView = (props: modalPropsType) => {
+export const useFilterView = (props: IModalPropsType) => {
   const { saveCallback = () => {}, cancelCallback = () => {} } = props;
 
   const [show, setShow] = useState<boolean>(false);
@@ -27,7 +27,7 @@ export const useFilterView = (props: modalPropsType) => {
     tableId: string;
 
     // 过滤条件数据
-    filterInfo?: IFilterInfo;
+    filterInfo: IFilterInfo;
   }
 
   const [externalParams, setExternalParams] = useState<IExternalParams>();
@@ -638,7 +638,7 @@ export const useFilterView = (props: modalPropsType) => {
   }, [show, cancel, containerRef, success, externalParams]);
 
   // 打开筛选弹窗
-  const openFilterModal = (params: any) => {
+  const openFilterModal = (params: IExternalParams) => {
     createContainer();
     setExternalParams(params);
     setShow(true);

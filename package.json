@@ -1,6 +1,6 @@
 {
   "name": "lark-filter-modal",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "type": "module",
   "description": "飞书多维表格筛选弹窗组件",
   "main": "dist/my-component.umd.js",
