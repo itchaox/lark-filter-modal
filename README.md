@@ -14,6 +14,11 @@
 
 ### React 版本
 
+导入库  
+`import { useFilterModal } from 'lark-filter-modal/react'`
+
+具体使用参考：
+
 ```javascript
 import { FC, useState } from 'react';
 
