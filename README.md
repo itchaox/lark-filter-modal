@@ -14,8 +14,6 @@
 
 ### React 版本
 
-- 在配置组件中使用
-
 ```javascript
 import { FC, useState } from 'react';
 
