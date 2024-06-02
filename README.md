@@ -80,6 +80,5 @@ interface IExternalParams {
   filterInfo: IFilterInfo;
 }
 
-
 openFilterModal: (params: IExternalParams) => void;
 ```
